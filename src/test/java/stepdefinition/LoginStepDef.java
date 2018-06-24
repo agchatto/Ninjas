@@ -66,10 +66,10 @@ public class LoginStepDef {
 	public void user_should_arrive_to_account_page() throws Throwable {
 		
 		String actual = chromeDriver.getCurrentUrl();
-		Assert.assertEquals(actual, "https://demo.oscommerce.com/index.php");
+		Assert.assertEquals(actual, "https://demo.oscommerce.com/account.php");
 		
 		String actual2 = firefoxDriver.getCurrentUrl();
-		Assert.assertEquals(actual2, "https://demo.oscommerce.com/index.php");
+		Assert.assertEquals(actual2, "https://demo.oscommerce.com/account.php");
 	   
 	}
 	

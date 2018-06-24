@@ -12,10 +12,10 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 	@CucumberOptions (
 	features = "feature",
-	glue = {"stepdefinition/LogOutStepDef", "utility"},
+	glue = {"stepdefinition", "utility"},
 	plugin = { "pretty","html:target/cucumber-htmlreport", "json:target/cucumber-report.json",
 	"com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html" },
-	tags = {"@LogOut"}
+	tags = {"@Logout"}
 	)
 
 @Test
