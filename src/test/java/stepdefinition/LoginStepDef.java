@@ -69,7 +69,7 @@ public class LoginStepDef {
 		Assert.assertEquals(actual, "https://demo.oscommerce.com/index.php");
 		
 		String actual2 = firefoxDriver.getCurrentUrl();
-		Assert.assertEquals(actual, "https://demo.oscommerce.com/index.php");
+		Assert.assertEquals(actual2, "https://demo.oscommerce.com/index.php");
 	   
 	}
 	
@@ -80,13 +80,13 @@ public class LoginStepDef {
 	}
 
 	@When("^User enters invalid \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void user_enters_invalid_and(String emailAddress, String password) throws Throwable {
+	public void user_enters_invalid_and(String EmailAddress, String Password) throws Throwable {
 		
-		chrome.emailId().sendKeys(emailAddress);
-		chrome.password().sendKeys(password);
+		chrome.emailId().sendKeys(EmailAddress);
+		chrome.password().sendKeys(Password);
 		
-		fire.emailId().sendKeys(emailAddress);
-		fire.password().sendKeys(password);
+		fire.emailId().sendKeys(EmailAddress);
+		fire.password().sendKeys(Password);
 	    
 	}
 
@@ -105,7 +105,7 @@ public class LoginStepDef {
 		Assert.assertEquals(errorMsg, "Welcome, Please Sign In");
 		
 		String errorMsg2 = firefoxDriver.findElement(By.xpath("//h1[text()='Welcome, Please Sign In']")).getText();
-		Assert.assertEquals(errorMsg, "Welcome, Please Sign In");
+		Assert.assertEquals(errorMsg2, "Welcome, Please Sign In");
 	   
 	}
 

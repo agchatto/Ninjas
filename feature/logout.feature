@@ -1,5 +1,7 @@
+@Logout
 Feature: eCommerce Logoff
 
+@chrome @firefox
 Scenario Outline: User Successfuly Logoff 
 Given User Arrives to Login Page
 When User Enters Valid Credentials "<email>" and "<password>"

@@ -44,6 +44,9 @@ public class AccountPage {
 	@FindBy (id = "tdb6")
 	WebElement checkOutBtn;
 	
+	@FindBy (id = "tdb4")
+	WebElement signOutBtn;
+	
 	public WebElement myAccountBtn() {
 		return myAccountBtn;
 	}
@@ -82,6 +85,10 @@ public class AccountPage {
 	
 	public WebElement checkOutBtn() {
 		return checkOutBtn;
+	}
+	
+	public WebElement signOutBtn () {
+		return signOutBtn;
 	}
 
 }

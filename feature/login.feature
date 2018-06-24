@@ -1,3 +1,4 @@
+@Login
 Feature: eCommerce Login 
 
 
@@ -17,11 +18,11 @@ Scenario Outline: Successful Login with Valid Credentials
 Scenario Outline: Unsuccessful Login with Invalid Credentials 
 	Given User navigates to OSCommerce HomePage
 	Then User navigates to Account Page 
-	When User enters invalid "<emailAdress>" and "<password>" 
+	When User enters invalid "<EmailAdress>" and "<Password>" 
 	And User clicks on Sign In button 
 	Then User should recieve error message 
 	
 	Examples: 
-		|emailAddress | password|
+		|EmailAddress | Password|
 		|userid@gmail.com | password1|
 		|test@email.com | password2 |
